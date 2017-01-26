@@ -3,7 +3,7 @@
  *
  * Copyright (c)  Jorik Tangelder;
  * Licensed under the MIT license */
-(function(window, document, exportName, undefined) { 
+(function(window, document, exportName, undefined) {
 'use strict';
 /**
  * @private
@@ -80,7 +80,7 @@ var TOUCH_ACTION_MAP = getTouchActionProps();
 var MOBILE_REGEX = /mobile|tablet|ip(ad|hone|od)|android/i;
 
 var SUPPORT_TOUCH = 'ontouchstart' in window;
-var SUPPORT_POINTER_EVENTS = prefixed(window, 'PointerEvent') !== undefined;
+var SUPPORT_POINTER_EVENTS = false;
 var SUPPORT_ONLY_TOUCH = SUPPORT_TOUCH && MOBILE_REGEX.test(navigator.userAgent);
 
 var INPUT_TYPE_TOUCH = 'touch';
